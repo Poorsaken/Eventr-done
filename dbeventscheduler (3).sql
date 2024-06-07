@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2024 at 04:08 AM
+-- Generation Time: Jun 07, 2024 at 05:52 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -137,9 +137,7 @@ CREATE TABLE `tbl_login` (
 
 INSERT INTO `tbl_login` (`id`, `username`, `password`) VALUES
 (10, 'angelica12', '$2y$10$dEruvD0x3jLq8wMPpoqaK.TwemA1ZF8XOBakobDih0gNpn4r/Luyi'),
-(11, 'bokybox', '$2y$10$iQi8T7PN/I4E931FUhfk6.FX40IM6NCTIqBoldMyz2LWXE0bK3oSC'),
-(13, '#Angel1ca@FueNtebella', '$2y$10$jiXbPgEeWRuIx/C.eHAC/O5Z0lhJ.lHDwF3OtCvPtAezkVqBQ69P.'),
-(14, 'jalstore', '$2y$10$0oBHp.Tz8FRSUrq.FyycRuKux850bkBDkpVBF78rJDxWF/FQAVZom');
+(13, '#Angel1ca@FueNtebella', '$2y$10$jiXbPgEeWRuIx/C.eHAC/O5Z0lhJ.lHDwF3OtCvPtAezkVqBQ69P.');
 
 -- --------------------------------------------------------
 
@@ -212,7 +210,7 @@ ALTER TABLE `tbl_venue`
 -- AUTO_INCREMENT for table `tbl_allevents`
 --
 ALTER TABLE `tbl_allevents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_approvedevents`
