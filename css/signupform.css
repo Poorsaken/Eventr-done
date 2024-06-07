@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #faf8ff;
+}
+/* 
+.parent {
+  display: flex;
+  justify-content: center;
+
+  height: 900px;
+  margin-top: 5%;
+}
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.signupform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.signupform input {
+  width: 413px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5%;
+  border: none;
+  outline: 1px solid rgb(226, 226, 226);
+  margin: 2% 0% 2% 0%;
+}
+
+
+
+.signupform input:focus {
+  outline: 2px solid black;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  width: 500px;
+  height: 120px;
+
+
+}
+
+
+
+
+
+
+.wrapper input {
+  width: 413px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5%;
+  border: none;
+  outline: 1px solid rgb(226, 226, 226);
+  margin: 2% 0% 2% 0%;
+}
+
+.wrapper input:focus {
+  outline: 2px solid black;
+}
+
+.login-btn {
+  width: 413px;
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  background-color: #9669e0;
+  border-radius: 10px;
+  color: #faf8ff;
+  font-size: 16px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.login-btn:focus {
+}
+
+a {
+  cursor: pointer;
+}
+
+.signup {
+  color: #9669e0;
+} */
+
+
+.parent_container{
+
+
+    display: flex;
+
+}
+
+.left-container , .right-container{
+
+    width: 50%;
+    height: 100vh;
+
+
+
+}
+
+.left-container{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container {
+
+background-size: cover;
+background-image: url('../img/event-organizer-1.jpg');
+
+}
+
+.login-btn {
+  width: 413px;
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  background-color: #2862E6;
+  border-radius: 10px;
+  color: #faf8ff;
+  font-size: 16px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+input {
+  width: 413px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5%;
+  border: none;
+  outline: 1px solid rgb(226, 226, 226);
+  margin: 2% 0% 2% 0%;
+}
+
+.create h1{
+
+    font-size: 20px;
+}
+.create p {
+
+
+
+    color: #2862E6;
+}
+
+.heading{
+
+    display: flex;
+    margin-bottom: 15%;
+    justify-content: space-between;
+}
+
