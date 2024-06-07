@@ -17,7 +17,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTR!</title>
     <!-- <link rel="stylesheet" href="./css/landingpage.css"/> -->
-    <link rel="stylesheet" href="./css/addevents.css">
+    <link rel="stylesheet" href="./css/addevent.css">
 </head>
 <body>
     <div class="parent_container">
