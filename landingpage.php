@@ -57,6 +57,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
             $obj = new Profile();
             $products = $obj->GetAllApprovedEvents1();
 
+              if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete_product_id'])) {
+                            $obj->UserCancelledEvents($_POST['delete_product_id']);
+                }
+
             if ($products) {
                 echo "<div class='container'>";
                 foreach ($products as $product) {
@@ -109,7 +113,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
                     echo "<form method='POST' action=''>";
                     echo "<input type='hidden' name='delete_product_id' value='{$product['id']}'>";
-                    echo "<input type='submit' class='reject-button' value='Reject' style='padding: 5px 10px;'>";
+                    echo "<input type='submit' class='reject-button' value='CANCEL' style='padding: 5px 10px; cursor: pointer;'>";
                     echo "</form>";
 
                     echo "</div>";

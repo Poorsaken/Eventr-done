@@ -10,7 +10,7 @@ include('./routes/router.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Product</title>
     <link rel="stylesheet" href="./css/update_eventform.css"/>
-    <link rel="stylesheet" href="./css/addevents.css"/>
+    <link rel="stylesheet" href="./css/addevent.css"/>
 </head>
 <body>
 
@@ -38,13 +38,8 @@ include('./routes/router.php');
 
                 // Now $product variable contains the details of the selected product
                 // You can use these details to populate the form fields
-            } else {
-                echo "Error: Product ID not set.";
-            }
-        } else {
-            header("Location: loginform.php");
-            exit();
-        }
+            } 
+        } 
 
         // Check if $product variable is set and not empty before populating form fields
         if(isset($product) && !empty($product)) {
@@ -55,7 +50,7 @@ include('./routes/router.php');
                 </div>
             </div>
             <form action="update_eventfunction.php" method="POST" id="myForm" enctype="multipart/form-data">
-                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                <!-- <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>"> -->
                 <div class="parent">
                     <div class="parent-flex">
                         <div class="when-title">
@@ -89,6 +84,14 @@ include('./routes/router.php');
                                 <input type="text" name="username" require value="<?php echo htmlspecialchars($_SESSION['username']); ?>"><br/>
                             </div>
                         </div>
+
+
+                         <label for="product_image">Current Image:</label><br>
+                        <?php if (!empty($product['image'])): ?>
+                            <img src="<?php echo $product['image'];?>" alt="Current Image" id="product_image"><br>
+                        <?php else: ?>
+                            <p>No image uploaded</p>
+                        <?php endif; ?>
                         <label for="product_image">Insert Image:</label>
                         <input type="file" id="image" name="image" class="product_desc" required><br>
                         <button name="btn" id="btn" class="submit_btn">Update Event</button>
@@ -97,7 +100,7 @@ include('./routes/router.php');
             </form>
         <?php
         } else {
-            echo "Error: Product details not found.";
+           
         }
         ?>
     </div>

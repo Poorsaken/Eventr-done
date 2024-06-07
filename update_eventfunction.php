@@ -32,8 +32,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                 $result = $obj->UpdateEvent($product_id, $name, $date, $timefrom, $timeto, $venue, $image_path);
 
                 if ($result) {
-                    echo "Event updated successfully.";
+                    
                     // Redirect user to a page indicating success
+                    header("Location: updatevents.php");
                     exit();
                 } else {
                     echo "Error updating event.";
@@ -58,6 +59,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
             if ($result) {
                 echo "Event updated successfully.";
+                header("Location: update_eventform.php");
                 // Redirect user to a page indicating success
                 exit();
             } else {
