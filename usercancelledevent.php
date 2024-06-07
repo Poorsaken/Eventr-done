@@ -11,7 +11,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTR!</title>
-    <link rel="stylesheet" href="./css/landingpages.css"/>
+    <link rel="stylesheet" href="./css/landingpage.css"/>
 </head>
  <style>
         .image_event {

@@ -17,7 +17,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
             <title>EVENTR!</title>
             <!-- <link rel="stylesheet" href="./css/landingpage.css"/> -->
 
-            <link rel= "stylesheet" href = "./css/landingpages.css"/>
+            <link rel= "stylesheet" href = "./css/landingpage.css"/>
         </head>
 
           <style>
